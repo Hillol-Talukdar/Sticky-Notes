@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\StickyNoteController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/stickynotes', [StickyNoteController::class, 'index']);
+
+
+Route::get('/stickynotes/create', [StickyNoteController::class, 'create']);
+Route::post('/stickynotes/create', [StickyNoteController::class, 'store']);
+
+Route::get('/stickynotes/edit', [StickyNoteController::class, 'edit']);
 
 Route::get('/', function () {
     return view('welcome');

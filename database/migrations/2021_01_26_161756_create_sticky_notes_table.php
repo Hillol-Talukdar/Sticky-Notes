@@ -16,7 +16,6 @@ class CreateStickyNotesTable extends Migration
         Schema::create('sticky_notes', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->text('description');
             $table->boolean('completed')->default(false);
             $table->timestamps();
         });

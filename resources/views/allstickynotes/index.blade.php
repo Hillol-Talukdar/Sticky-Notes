@@ -13,7 +13,13 @@
         @foreach($allnotes as $note)
             <li id="note_list">
                 <p> {{ $note->title }} </p>
-                <a href="{{'/stickynotes/'.$note->id.'/edit'}}" class="edit_button"> Edit</a>
+
+                <div>
+                    <a href="{{'/stickynotes/'.$note->id.'/edit'}}" class="edit_button"> Edit</a>
+                    <a class="done_button">Done</a>
+                    <a class="delete_button">Delete</a>
+                </div>
+
             </li>
         @endforeach
 

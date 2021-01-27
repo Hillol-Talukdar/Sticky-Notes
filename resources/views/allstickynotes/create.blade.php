@@ -2,7 +2,7 @@
 
 @section('content')
     <link rel="stylesheet" type="text/css" href="{{ url('/css/create.css') }}" />
-    <h1 >Write your notes</h1>
+    <h1 class="header" >Write your notes</h1>
 
     <x-alert/>
     <div id="input_form">
@@ -14,5 +14,8 @@
     </div>
 
 
-    <a class="back_button" href="/stickynotes"> Back</a>
+    <div class="back_button">
+        <a  href="/stickynotes" > Back</a>
+    </div>
+    
 @endsection

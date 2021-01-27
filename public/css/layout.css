@@ -2,6 +2,16 @@
 {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_container
+{
+    width: fit-content;
+    border:  2px solid darkslategray;
+    border-radius: 5px;
 }
 
 ul

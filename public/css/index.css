@@ -3,6 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid;
+    padding: 2px 10px;
 }
 
 .create_new_button
@@ -24,13 +26,34 @@
     cursor: pointer;
     width: fit-content;
     height: fit-content;
-    margin: 5px;
+    margin: 0px 5px;
+}
+.done_button
+{
+    padding: 2px 2px;
+    background: green;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    
+    margin: 0px 5px;
+}
+.delete_button
+{
+    padding: 2px 2px;
+    background: red;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 5px;
 }
 
 #note_list
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -39,3 +62,7 @@ a
     text-decoration: none;
 }
 
+ul
+{
+    margin: 0px 0px;
+}

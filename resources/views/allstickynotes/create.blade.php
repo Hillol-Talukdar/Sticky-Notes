@@ -12,6 +12,8 @@
     <div class="container">
         <h1 >Write your notes</h1>
 
+        <x-alert/>
+
         <form method="post" action="/stickynotes/create" >
             @csrf
             <input type="text" name="title" >

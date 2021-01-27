@@ -20,13 +20,19 @@ class StickyNoteController extends Controller
 
     public function store(Request $request)
     {
+
+        $request->validate([
+            'title' => 'required|max:255',
+        ]);
+
         StickyNote::create($request->input());
 
-        return redirect()->back();
+        return redirect()->back()->with('message', 'Note Created Successfully');
     }
 
     public function edit()
     {
         return view('allstickynotes.edit');
     }
+
 }

@@ -9,16 +9,14 @@
     </div>
 
     <ul>
+        <x-alert/>
         @foreach($allnotes as $note)
-            <li>
-                {{ $note->title }}
+            <li id="note_list">
+                <p> {{ $note->title }} </p>
+                <a href="{{'/stickynotes/'.$note->id.'/edit'}}" class="edit_button"> Edit</a>
             </li>
         @endforeach
 
     </ul>
 
 @endsection
-
-
-
-

@@ -16,6 +16,24 @@
     margin: 5px;
 }
 
+.edit_button
+{
+    padding: 2px 2px;
+    background: orange;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    margin: 5px;
+}
+
+#note_list
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 a
 {
     text-decoration: none;

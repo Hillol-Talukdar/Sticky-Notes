@@ -5,10 +5,14 @@
     <h1 >Write your notes</h1>
 
     <x-alert/>
+    <div id="input_form">
+        <form method="post" action="/stickynotes/create" >
+            @csrf
+            <input type="text" name="title" >
+            <input type="submit" value="Create" class="create_button">
+        </form>
+    </div>
 
-    <form method="post" action="/stickynotes/create" >
-        @csrf
-        <input type="text" name="title" >
-        <input type="submit" value="Create" class="create_button">
-    </form>
+
+    <a class="back_button" href="/stickynotes"> Back</a>
 @endsection

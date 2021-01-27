@@ -32,9 +32,24 @@ class StickyNoteController extends Controller
         return redirect()->back()->with('message', 'Note Created Successfully');
     }
 
-    public function edit()
+    public function edit($id)
     {
-        return view('allstickynotes.edit');
+        $stickyNote = StickyNote::find($id);
+        return view('allstickynotes.edit',  compact('stickyNote'));
+    }
+
+    public function update(Request $request, $id)
+    {
+
+        $request->validate([
+            'title' => 'required|max:255',
+        ]);
+
+        $stickyNote = StickyNote::find($id);
+
+        $stickyNote->update(['title' => $request->input('title')]);
+
+        return redirect('/stickynotes')->with('message', 'Note Updated Successfully');
     }
 
 }

@@ -21,7 +21,8 @@ Route::get('/stickynotes', [StickyNoteController::class, 'index']);
 Route::get('/stickynotes/create', [StickyNoteController::class, 'create']);
 Route::post('/stickynotes/create', [StickyNoteController::class, 'store']);
 
-Route::get('/stickynotes/edit', [StickyNoteController::class, 'edit']);
+Route::get('/stickynotes/{id}/edit', [StickyNoteController::class, 'edit']);
+Route::patch('/stickynotes/{id}/update', [StickyNoteController::class, 'update']);
 
 Route::get('/', function () {
     return view('welcome');

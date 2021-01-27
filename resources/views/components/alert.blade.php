@@ -3,11 +3,23 @@
 
     @if(session()->has('message'))
         {{$slot}}
-        <div class='success'>{{ session()->get('message') }} </div>
+        <div class='success'>
+            <ul>
+                <li>
+                    {{ session()->get('message') }}
+                </li>
+            </ul>
+        </div>
 
     @elseif(session()->has('error'))
         {{$slot}}
-        <div class='danger'>{{ session()->get('error') }} </div>
+        <div class='danger'>
+            <ul>
+                <li>
+                    {{ session()->get('error') }} 
+                </li>
+            </ul>
+        </div>
     @endif
 
     @if($errors->any())

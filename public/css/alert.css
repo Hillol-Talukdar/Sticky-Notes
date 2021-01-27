@@ -1,11 +1,18 @@
 .success
 {
-    padding: 2px 4px;
+    /* padding: 2px 4px; */
     background-color: green;
+    color: white;
 }
 
 .danger
 {
-    padding: 2px 4px;
+    /* padding: 2px 4px; */
     background-color: red;
+    color: white;
+}
+
+ul
+{
+    list-style-type: none;
 }

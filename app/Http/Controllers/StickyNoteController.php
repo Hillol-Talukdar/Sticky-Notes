@@ -10,7 +10,9 @@ class StickyNoteController extends Controller
 {
     public function index()
     {
-        return view('allstickynotes.index');
+        $allnotes = StickyNote::all();
+
+        return view('allstickynotes.index' , compact('allnotes'));
     }
 
     public function create()

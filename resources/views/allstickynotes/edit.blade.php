@@ -12,13 +12,13 @@
             @method('patch')
 
             <input type="text" value="{{$stickyNote->title}}" name="title" >
-            <input type="submit" value="Edit" class="Edit_button">
+            <input type="submit" value="Edit" class="edit_button">
         </form>
     </div>
 
 
-    <div class="back_button">
-        <a href="/stickynotes"> Back</a>
+    <div class="back_button_container">
+        <a href="/stickynotes" class="back_button"> Back</a>
     </div>  
 
 @endsection

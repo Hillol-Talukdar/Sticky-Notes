@@ -52,4 +52,14 @@ class StickyNoteController extends Controller
         return redirect('/stickynotes')->with('message', 'Note Updated Successfully');
     }
 
+    public function delete($id)
+    {
+        $stickyNote = StickyNote::find($id);
+
+        $stickyNote->delete();
+
+        return redirect('/stickynotes')->with('message', 'Note Deleted Successfully');
+    }
+
+
 }

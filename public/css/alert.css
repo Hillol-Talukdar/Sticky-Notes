@@ -1,13 +1,15 @@
 .success
 {
-    /* padding: 2px 4px; */
+    margin: 2px 0px;
+    padding: 2px 2px;
     background-color: green;
     color: white;
 }
 
 .danger
 {
-    /* padding: 2px 4px; */
+    margin: 2px 0px;
+    padding: 2px 2px;
     background-color: red;
     color: white;
 }

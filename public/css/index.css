@@ -3,14 +3,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid darkslategray;
     padding: 2px 10px;
+    
 }
 
 .create_new_button
 {
     padding: 2px 2px;
-    background: lightblue;
+    background: teal;
+    color: whitesmoke;
     border-radius: 5px;
     cursor: pointer;
     width: fit-content;
@@ -18,31 +20,16 @@
     margin: 5px;
 }
 
+a.create_new_button:hover
+{
+    background-color: steelblue;
+}
+
 .edit_button
 {
     padding: 2px 2px;
     background: orange;
-    border-radius: 5px;
-    cursor: pointer;
-    width: fit-content;
-    height: fit-content;
-    margin: 0px 5px;
-}
-.done_button
-{
-    padding: 2px 2px;
-    background: green;
-    border-radius: 5px;
-    cursor: pointer;
-    width: fit-content;
-    height: fit-content;
-    
-    margin: 0px 5px;
-}
-.delete_button
-{
-    padding: 2px 2px;
-    background: red;
+    color: whitesmoke;
     border-radius: 5px;
     cursor: pointer;
     width: fit-content;
@@ -50,11 +37,48 @@
     margin: 0px 5px;
 }
 
+a.edit_button:hover
+{
+    background-color: darkorange;
+    /* color: tomato; */
+}
+
+.done_button
+{
+    padding: 2px 2px;
+    background: green;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    
+    margin: 0px 5px;
+}
+
+.delete_button
+{
+    padding: 2px 2px;
+    background: red;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 5px;
+}
+
+a.delete_button:hover
+{
+    background-color: rgb(204, 21, 21);
+}
+
 #note_list
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 5px;
 }
 
 a
@@ -64,5 +88,6 @@ a
 
 ul
 {
-    margin: 0px 0px;
+    margin: 5px 0px;
+    padding: 0px;
 }

@@ -14,8 +14,8 @@
     </div>
 
 
-    <div class="back_button">
-        <a  href="/stickynotes" > Back</a>
+    <div class="back_button_container">
+        <a  href="/stickynotes" class="back_button" > Back</a>
     </div>
     
 @endsection

@@ -10,6 +10,8 @@
 </head>
 <body>
 
+    @yield('headerContent')
+
     <div class="container">
             @yield('content')
     </div>

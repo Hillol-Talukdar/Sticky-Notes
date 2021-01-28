@@ -15,8 +15,10 @@ use App\Http\Controllers\StickyNoteController;
 |
 */
 
-Route::get('/stickynotes', [StickyNoteController::class, 'index']);
+Route::get('/', [StickyNoteController::class, 'home']);
+Route::get('/about', [StickyNoteController::class, 'about']);
 
+Route::get('/stickynotes', [StickyNoteController::class, 'index']);
 
 Route::get('/stickynotes/create', [StickyNoteController::class, 'create']);
 Route::post('/stickynotes/create', [StickyNoteController::class, 'store']);
@@ -26,7 +28,6 @@ Route::patch('/stickynotes/{id}/update', [StickyNoteController::class, 'update']
 
 Route::get('/stickynotes/{id}/delete', [StickyNoteController::class, 'delete']);
 
-
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });

@@ -1,7 +1,57 @@
+body
+{
+    background-image: url('/img/bg5.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 0;
+    margin: 0;
+}
+
 .header
+{
+    margin: 0px 0px;
+    backdrop-filter: blur(5px);
+}
+
+.left
+{
+    display: inline-block;
+    margin: 3px auto;
+    width: 50%;
+}
+
+.navbar
+{
+    display: inline-block;
+    text-shadow: 1px 1px;
+}
+
+.navbar li
+{
+    display: inline-block;
+}
+
+.navbar li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 25px;
+}
+
+.navbar li a:hover
+{
+    color: bisque
+}
+
+.title_header
 {
     border-bottom: 1px solid darkslategray;
     padding: 2px 10px;
+    color: white;
 }
 
 .edit_button
@@ -40,12 +90,14 @@ a
     padding: 4px 8px;
     border-radius: 5px;
     width: max-content;
-    background: slategray;
+    background-color: darkslategray;
+    /* background: slategray; */
     color: bisque;
 }
 .back_button:hover
 {
-    background-color: darkslategray;
+    background-color:darkslateblue ;
+    /* background: slategray; */
 }
 
 #input_form
@@ -58,7 +110,7 @@ a
     width: 400px;
     border:  2px solid darkslategray;
     border-radius: 5px;
-
+    backdrop-filter: blur(5px);
 }
 
 .input_title

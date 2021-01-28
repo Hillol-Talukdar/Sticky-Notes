@@ -29,7 +29,7 @@ class StickyNoteController extends Controller
 
         StickyNote::create($request->input());
 
-        return redirect()->back()->with('message', 'Note Created Successfully');
+        return redirect('/stickynotes')->with('message', 'Note Created Successfully');
     }
 
     public function edit($id)

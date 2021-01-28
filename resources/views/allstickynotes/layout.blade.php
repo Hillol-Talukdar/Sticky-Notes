@@ -11,10 +11,7 @@
 <body>
 
     <div class="container">
-        <div class="box_container">
             @yield('content')
-        </div>
-       
     </div>
 
 </body>

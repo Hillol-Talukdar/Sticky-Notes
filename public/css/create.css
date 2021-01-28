@@ -7,11 +7,15 @@
 .create_button
 {
     border-radius: 5px;
+    padding: 4px 4px;
+    cursor: pointer; 
+    background: teal;
+    color: whitesmoke;
 }
 
 .create_button:hover
 {
-    background-color: limegreen;
+    background-color: steelblue;
     color: white;
     border-radius: 5px;
 }
@@ -33,7 +37,7 @@ a
 
 .back_button
 {
-    padding: 2px 2px;
+    padding: 4px 8px;
     border-radius: 5px;
     width: max-content;
     background: slategray;
@@ -47,4 +51,18 @@ a
 #input_form
 {
     margin: 10px 10px;
+}
+
+.box_container
+{
+    width: 400px;
+    border:  2px solid darkslategray;
+    border-radius: 5px;
+
+}
+
+.input_title
+{
+    width: 210px;
+    padding: 4px 4px;
 }

@@ -7,15 +7,6 @@
     align-items: center;
 }
 
-.box_container
-{
-    width: fit-content;
-    /* height: 500px; */
-    border:  2px solid darkslategray;
-    border-radius: 5px;
-    /* overflow: scroll; */
-}
-
 ul
 {
     list-style-type: none;

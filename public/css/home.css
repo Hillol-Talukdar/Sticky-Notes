@@ -48,3 +48,32 @@ body
 {
     color: bisque
 }
+
+.container
+{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_container
+{
+    width: 400px;
+    border:  2px solid darkslategray;
+    border-radius: 5px;
+    color: teal;
+    /* backdrop-filter: blur(5px); */
+}
+
+.get_started
+{
+    text-decoration: none;
+    background: crimson;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 4px 4px;
+    margin: 4px 4px;
+}

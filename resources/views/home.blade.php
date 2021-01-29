@@ -22,5 +22,13 @@
         </div>
     </header>
 
+    <div class="container">
+        <div class="box_container">
+            <h1>Created by Hillol</h1>
+            <a href="/stickynotes" class="get_started">Get started</a>
+        </div>
+        
+    </div>
+
 </body>
 </html>

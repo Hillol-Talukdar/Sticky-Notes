@@ -59,7 +59,7 @@ body
     border-radius: 5px;
     padding: 4px 6px;
     cursor: pointer; 
-    background-color: orange;
+    background-color: darkslategray;
     color: white;
 }
 
@@ -96,8 +96,8 @@ a
 }
 .back_button:hover
 {
-    background-color:darkslateblue ;
-    /* background: slategray; */
+    background-color:rgb(10, 212, 212) ;
+    color: black;
 }
 
 #input_form

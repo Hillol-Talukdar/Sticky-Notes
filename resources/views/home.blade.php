@@ -24,8 +24,8 @@
 
     <div class="container">
         <div class="box_container">
-            <h1>Created by Hillol</h1>
-            <a href="/stickynotes" class="get_started">Get started</a>
+            <h1>Sticky Notes</h1>
+            <a href="/stickynotes" class="get_started">Let's Make Notes</a>
         </div>
         
     </div>

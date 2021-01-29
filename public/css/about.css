@@ -65,8 +65,10 @@ body
 .box_container
 {
     width: 400px;
-    border:  2px solid darkslategray;
+    border:  2px 6px  black;
+    border-style: double;
     border-radius: 5px;
-    color: coral;
+    color: black;
+    margin-top: 470px;
     /* backdrop-filter: blur(5px); */
 }

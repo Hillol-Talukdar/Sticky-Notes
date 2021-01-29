@@ -51,6 +51,7 @@ body
 
 .container
 {
+    height: fit-content;
     text-align: center;
     margin-top: 20px;
     display: flex;
@@ -61,9 +62,11 @@ body
 .box_container
 {
     width: 400px;
-    border:  2px solid darkslategray;
+    height: 115px;
+    border:  2px solid white;
     border-radius: 5px;
     color: teal;
+    padding-bottom: 35px;
     /* backdrop-filter: blur(5px); */
 }
 
@@ -74,6 +77,26 @@ body
     color: white;
     cursor: pointer;
     border-radius: 4px;
-    padding: 4px 4px;
-    margin: 4px 4px;
+    padding: 5px 10px;
+    margin: 10px 4px;
+    margin-bottom: 20px;
+}
+
+.get_started:hover
+{
+    text-decoration: none;
+    background: crimson;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 10px 4px;
+    margin-bottom: 10px;
+}
+
+h1
+{
+    margin-bottom: 40px;
+    color: white;
 }

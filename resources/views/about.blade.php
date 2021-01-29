@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" type="text/css" href="{{ url('/css/about.css') }}" />
+@extends('allstickynotes.layout')
 
-    <title>Sticky Notes</title>
-</head>
-<body>
-    
+@section('headerContent')
+    <link rel="stylesheet" type="text/css" href="{{ url('/css/about.css') }}" />
     <header class="header">
         <div class="left">
             <ul class="navbar">
@@ -29,5 +21,4 @@
         
     </div>
 
-</body>
-</html>
+@endsection

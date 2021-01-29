@@ -31,7 +31,6 @@
             </form>
         </div>
 
-
         <div class="back_button_container">
             <a  href="/stickynotes" class="back_button" > Back</a>
         </div>

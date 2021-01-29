@@ -79,6 +79,40 @@ a.create_new_button:hover
     background-color: steelblue;
 }
 
+.done_button
+{
+    padding: 4px 4px;
+    background: grey;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 5px;
+}
+
+.done_button:hover
+{
+    background: forestgreen;
+}
+
+.undo_button
+{
+    padding: 4px 4px;
+    background: forestgreen;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 5px;
+}
+
+.undo_button:hover
+{
+    background: orangered;
+}
+
 .edit_button
 {
     padding: 4px 4px;
@@ -144,9 +178,15 @@ a
     /* color: white; */
 }
 
+#pera_completed
+{
+    text-decoration: line-through;
+}
+
 .box_container
 {
-    width: 400px;
+    /* width: 400px; */
+    width: 450px;
     border:  2px solid darkslategray;
     border-radius: 5px;
     backdrop-filter: blur(5px);
@@ -154,7 +194,8 @@ a
 
 .notes_container
 { 
-    width: 400px;
+    /* width: 400px; */
+    width: 450px;
     height: 450px;
     overflow-y: scroll;
 }

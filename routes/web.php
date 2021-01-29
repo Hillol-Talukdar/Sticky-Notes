@@ -28,6 +28,9 @@ Route::patch('/stickynotes/{id}/update', [StickyNoteController::class, 'update']
 
 Route::get('/stickynotes/{id}/delete', [StickyNoteController::class, 'delete']);
 
+Route::get('/stickynotes/{id}/complete', [StickyNoteController::class, 'complete']);
+Route::get('/stickynotes/{id}/incomplete', [StickyNoteController::class, 'incomplete']);
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });

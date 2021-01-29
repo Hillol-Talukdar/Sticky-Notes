@@ -35,9 +35,19 @@
                 @foreach($allnotes as $note)
 
                     <li id="note_list">
-                        <p class="para_title"> {{ $note->title }} </p>
+                        @if($note->completed)
+                            <p class="para_title" id="pera_completed"> {{ $note->title }} </p>
+                        @else
+                            <p class="para_title" > {{ $note->title }} </p>
+                        @endif
 
                         <div>
+                            @if($note->completed)
+                                <a href="{{'/stickynotes/'.$note->id.'/incomplete'}}" class="undo_button"> Undo</a>
+                            @else
+                                <a href="{{'/stickynotes/'.$note->id.'/complete'}}" class="done_button"> Done</a>
+                            @endif
+
                             <a href="{{'/stickynotes/'.$note->id.'/edit'}}" class="edit_button"> Edit</a>
                             <a class="delete_button" href="{{'/stickynotes/'.$note->id.'/delete'}}">Delete</a>
                        

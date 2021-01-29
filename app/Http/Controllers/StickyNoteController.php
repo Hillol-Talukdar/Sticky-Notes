@@ -22,7 +22,8 @@ class StickyNoteController extends Controller
 
     public function index()
     {
-        $allnotes = StickyNote::all();
+        // $allnotes = StickyNote::all();
+        $allnotes = StickyNote::orderBy('completed')->get();
 
         return view('allstickynotes.index' , compact('allnotes'));
     }
@@ -73,5 +74,24 @@ class StickyNoteController extends Controller
         return redirect('/stickynotes')->with('message', 'Note Deleted Successfully');
     }
 
+    public function complete($id)
+    {
+
+        $stickyNote = StickyNote::find($id);
+
+        $stickyNote->update(['completed' => true]);
+
+        return redirect('/stickynotes')->with('message', 'Note Marked as Completed');
+    }
+
+    public function incomplete($id)
+    {
+
+        $stickyNote = StickyNote::find($id);
+
+        $stickyNote->update(['completed' => false]);
+
+        return redirect('/stickynotes')->with('message', 'Note marked as incompleted');
+    }
 
 }
